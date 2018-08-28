@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-export default class IndexPage extends React.Component {
+export default class IndexPage extends Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
